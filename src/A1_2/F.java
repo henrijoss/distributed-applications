@@ -6,7 +6,7 @@ public interface F {
     public int f(int x);
 }
 
-class Y implements F {
+class Calculator implements F {
 
     private int n = new Random().nextInt(100);
 

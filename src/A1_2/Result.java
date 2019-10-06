@@ -18,7 +18,7 @@ public class Result {
     }
 
     public synchronized int[] generateOverallResult() throws InterruptedException {
-        while (this.amount < overallResult.size()) {
+        while (overallResult.size() < this.amount) {
             wait();
         }
         return overallResult.stream().mapToInt(i -> i).toArray();
