@@ -14,5 +14,4 @@ class Y implements F {
         n = n + x;
         return n;
     }
-
 }

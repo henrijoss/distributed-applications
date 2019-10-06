@@ -16,18 +16,10 @@ public class Sleep extends Thread {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-
+                System.out.println("Something went wrong " + e.getMessage());
             }
             timeLeft--;
         }
         System.out.print(text);
-    }
-
-    public static void schlafen(int m) {
-        try {
-            Thread.sleep(1000*m);
-        } catch (InterruptedException t) {
-
-        }
     }
 }
